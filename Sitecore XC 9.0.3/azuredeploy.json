@@ -480,9 +480,6 @@
           "location": {
             "value": "[parameters('location')]"
           },
-          "sitecoreSKU": {
-            "value": "[parameters('sitecoreSKU')]"
-          },
           "sqlServerName": {
             "value": "[parameters('sqlServerName')]"
           },
