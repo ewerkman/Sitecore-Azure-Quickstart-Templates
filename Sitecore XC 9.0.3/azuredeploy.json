@@ -10,7 +10,6 @@
       "defaultValue": {
         "deploymentId": null,
         "location": null,
-        "sitecoreSKU": null,
         "sitecoreAdminPassword": null,
         "solrConnectionString": null,
 
@@ -105,15 +104,7 @@
       "type": "string",
       "defaultValue": "[coalesce(parameters('standard').location, resourceGroup().location)]"
     },
-    "sitecoreSKU": {
-      "type": "string",
-      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large" ],
-      "defaultValue": "[coalesce(parameters('standard').sitecoreSKU, 'Small')]",
-      "metadata": {
-        "description": "Sitecore SKU controls the sizes and service levels of the provisioned resources"
-      }
-    },
-
+   
     "sitecoreAdminPassword": {
       "type": "securestring",
       "minLength": 8,
